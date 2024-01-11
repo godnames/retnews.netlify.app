@@ -9649,6 +9649,9 @@ blockquote footer {
     border-color: #ced4da !important;
 }
 .btn-facebook {
+    background-color: grey;
+}
+.btn-share {
     background-color: #3b5999;
 }
 .btn-twitter {
@@ -9728,6 +9731,9 @@ blockquote footer {
     background-color: transparent;
     box-shadow: none;
 }
+.btn-social.btn-social-o:hover.share {
+    color: #3b5999;
+}
 .btn-social.btn-social-o:hover.facebook {
     color: #3b5999;
 }
@@ -9760,7 +9766,16 @@ blockquote footer {
     border: 1px solid;
     border-color: #3b5999;
 }
+.btn-social.outlined.share {
+    color: #3b5999;
+    border: 1px solid;
+    border-color: #3b5999;
+}
 .btn-social.outlined.facebook:hover {
+    background-color: #3b5999;
+    color: #fff;
+}
+.btn-social.outlined.share:hover {
     background-color: #3b5999;
     color: #fff;
 }
@@ -13261,6 +13276,9 @@ input[type="number"] {
 .social__media__animation .menu .list__submenu li a:hover.facebook i.fa {
     background-color: #3b5999;
 }
+.social__media__animation .menu .list__submenu li a:hover.share i.fa {
+    background-color: #3b5999;
+}
 .social__media__animation .menu .list__submenu li a:hover.twitter i.fa {
     background-color: #55acee;
 }
@@ -14660,6 +14678,7 @@ body.offcanvas-active {
     margin: 0;
 }
 .wrap__article-detail-content .total-views .list-inline .list-inline-item .facebook,
+.wrap__article-detail-content .total-views .list-inline .list-inline-item .share,
 .wrap__article-detail-content .total-views .list-inline .list-inline-item .linkedin,
 .wrap__article-detail-content .total-views .list-inline .list-inline-item .telegram,
 .wrap__article-detail-content .total-views .list-inline .list-inline-item .twitter,
@@ -14670,6 +14689,7 @@ body.offcanvas-active {
 }
 @media screen and (min-width: 320px) and (max-width: 575px) {
     .wrap__article-detail-content .total-views .list-inline .list-inline-item .facebook,
+    .wrap__article-detail-content .total-views .list-inline .list-inline-item .share,
     .wrap__article-detail-content .total-views .list-inline .list-inline-item .linkedin,
     .wrap__article-detail-content .total-views .list-inline .list-inline-item .telegram,
     .wrap__article-detail-content .total-views .list-inline .list-inline-item .twitter,
@@ -14679,6 +14699,7 @@ body.offcanvas-active {
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .wrap__article-detail-content .total-views .list-inline .list-inline-item .facebook,
+    .wrap__article-detail-content .total-views .list-inline .list-inline-item .share,
     .wrap__article-detail-content .total-views .list-inline .list-inline-item .linkedin,
     .wrap__article-detail-content .total-views .list-inline .list-inline-item .telegram,
     .wrap__article-detail-content .total-views .list-inline .list-inline-item .twitter,
@@ -14687,6 +14708,7 @@ body.offcanvas-active {
     }
 }
 .wrap__article-detail-content .total-views .list-inline .list-inline-item .facebook span,
+.wrap__article-detail-content .total-views .list-inline .list-inline-item .share span,
 .wrap__article-detail-content .total-views .list-inline .list-inline-item .linkedin span,
 .wrap__article-detail-content .total-views .list-inline .list-inline-item .telegram span,
 .wrap__article-detail-content .total-views .list-inline .list-inline-item .twitter span,
@@ -14699,6 +14721,7 @@ body.offcanvas-active {
 }
 @media screen and (min-width: 320px) and (max-width: 575px) {
     .wrap__article-detail-content .total-views .list-inline .list-inline-item .facebook span,
+    .wrap__article-detail-content .total-views .list-inline .list-inline-item .share span,
     .wrap__article-detail-content .total-views .list-inline .list-inline-item .linkedin span,
     .wrap__article-detail-content .total-views .list-inline .list-inline-item .telegram span,
     .wrap__article-detail-content .total-views .list-inline .list-inline-item .twitter span,
@@ -14710,6 +14733,12 @@ body.offcanvas-active {
     background: #3b5999;
 }
 .wrap__article-detail-content .total-views .list-inline .list-inline-item .facebook:hover {
+    opacity: 0.9;
+}
+.wrap__article-detail-content .total-views .list-inline .list-inline-item .share {
+    background: #3b5999;
+}
+.wrap__article-detail-content .total-views .list-inline .list-inline-item .share:hover {
     opacity: 0.9;
 }
 .wrap__article-detail-content .total-views .list-inline .list-inline-item .twitter {
