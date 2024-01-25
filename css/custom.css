@@ -184,6 +184,6 @@
 .span-color{
     color: #ef0303;
 }
-.ul-color li::marker{
-    
+.ul-li-color li::marker{
+    color: #ef0303;
 }
