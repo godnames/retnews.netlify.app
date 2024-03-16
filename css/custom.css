@@ -187,3 +187,6 @@
 .ul-li-color li::marker{
     color: #ef0303;
 }
+.li-color{
+    margin-left: 40px;
+}
